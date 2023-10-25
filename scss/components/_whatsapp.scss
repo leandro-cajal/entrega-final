@@ -1,0 +1,32 @@
+/*boton de whatsapp flotante*/
+.wtsp{
+    a{
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background-color: $color-t-2;
+        color: $color-t-1;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 35px;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+        z-index: 100;
+        transition: all 0.5s;
+        &:hover{
+            text-decoration: none;
+            color: $color-t-2;
+            background-color:$color-t-1;
+            transform: scale(1.1);
+            font-size: 40px; 
+        }
+        .wtsp i{
+        position: sticky;
+        right: 0;
+        bottom: 0;
+        }
+    }
+}
+/*fin de whatsapp*/

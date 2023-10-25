@@ -1,0 +1,85 @@
+#footer{
+    background-color:$color-t-3;
+    .container-fluid{
+        .footer-left{
+            @include flex(column,nowrap,center,left,20px);
+            img{
+                width: 150px;
+            }
+            p{
+                color: $color-t-2;
+                font-size: map-get($font-size , xxs );
+                text-align: left;
+            }
+        }
+        .footer-susc{
+            @include flex(column,nowrap,center,center,20px);
+            h6{
+                color: $color-t-4;
+                text-align: center;
+                font-size: map-get($font-size , s );
+            }
+            p{
+                color: $color-t-2;
+                text-align: center;
+                font-size: map-get($font-size , xxs );
+            }
+        }
+        .footer-social{
+            @include flex(column,nowrap,center,center,40px);
+            .social-icons{
+                @include flex(column,wrap,center,center,10px);
+                span{
+                    text-transform: capitalize;
+                    font-size: map-get($font-size , m );
+                    color: $color-t-4;  
+                }
+                a{
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    color: $color-t-2;
+                    font-size: map-get($font-size , xxs );
+                    i{
+                        font-size: map-get($font-size , l );
+                        color: $color-t-1; 
+                        padding: 5px;
+                        &:hover{
+                            animation: headShake;
+                            animation-duration: 1s;
+                        }    
+                    }
+                }
+            }
+            .direction{
+                .location-icon{
+                    i{
+                        color: $color-t-4;
+                    }
+                }
+                a{
+                    text-decoration: none;
+                    color: $color-t-2;
+                }
+            }
+        }
+    }
+    .bot-footer{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+        .rights{
+            p{
+                font-size: map-get($font-size , xxxs );
+                color:$color-t-4;
+            }
+        }
+        .design-by {
+            span{
+                font-size: map-get($font-size , xxs );
+                padding-right: 120px;
+                color: $color-t-4;
+            }
+        }
+    }
+}
+

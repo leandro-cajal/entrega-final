@@ -1,0 +1,94 @@
+%estilos-contacto {
+    background-color:$color-t-2;
+    padding: 16px 22px; 
+    margin-bottom: 25px;
+    font-size:map-get($font-size , xs );
+    display: flex;
+    border: solid 2px $color-t-4;
+}
+%estilos-contacto-2 {
+    color:$color-t-4;
+    font-size: map-get($font-size , xxs );
+    font-weight:lighter;
+    text-transform: uppercase;
+}
+.main-contacto{
+    .container-fluid{
+        @include flex (column,nowrap,center,center,0);
+        .info-contacto{
+            padding-bottom: 100px;
+            @include flex (column,nowrap,center,center,0);
+            .container{
+                @include flex (row,nowrap,flex-start,center,50px);
+                i{
+                    color: $color-t-1;
+                    font-size: map-get($font-size , l );
+                }
+                .d-flex{
+                    h6{
+                        font-size: map-get($font-size , sm );
+                        font-weight: bold;
+                    }
+                    p{
+                        color: $color-t-4;
+                    }
+                }
+            }
+        }
+    }            
+    .contact-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 800px;
+        /*Formulario de contacto*/     
+        .formulario-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column; 
+            font-size: map-get($font-size , xs );
+            justify-content: flex-start;
+            .form-title{
+                text-align: center;
+                margin-bottom: 35px;
+                color: $bg-color-1;
+                font-family: 'Roboto', cursive;
+            }
+            .input-group{
+                display: flex;
+                flex-direction: column;
+                input{
+                    &:not(.btn-form){
+                        @extend %estilos-contacto;
+                    }
+                    &::placeholder{
+                        @extend %estilos-contacto-2;
+                    }
+                }
+                textarea{
+                    @extend %estilos-contacto;
+                    &::placeholder{
+                        @extend %estilos-contacto-2;
+                    }
+                }
+                .btn-form {
+                    background-color:$color-t-2;
+                    color:$color-t-1;
+                    padding: 12px 16px;
+                    cursor: pointer;
+                    transition: background-color 0.3s, color 0.3s;
+                    font-size: map-get($font-size , s );
+                    font-weight: 600;
+                    border: solid 2px $color-t-1;
+                    text-transform: uppercase;
+                    align-self: center;
+                    border-radius: 10px !important;
+                    &:hover {
+                        background-color:$color-t-1;
+                        color:$color-t-2;
+                    }
+                }
+            }
+        }
+    }
+}

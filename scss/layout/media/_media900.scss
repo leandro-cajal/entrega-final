@@ -1,0 +1,100 @@
+@media (max-width:900px){
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        font-size: map-get($font-size ,  m);
+                    }
+                    h1{
+                        font-size: map-get($font-size , xl );
+                    }
+                    h3{
+                        font-size: map-get($font-size , xl );
+                    }
+                }
+            }
+        }
+    }
+    .description{
+        .description-container{
+            .description-container-item{
+                .description-title{
+                    gap:10px;
+                }
+                .description-text {
+                    p{
+                        padding: 0px 0px 10px 0px;
+                        text-align: center;
+                    }
+                }
+            }
+            .description-img{
+                height: 300px;
+            }
+        }
+    }
+    .galeria-index{
+        .galeria-index-link{
+            font-size: map-get($font-size, xl );
+            width: 25%;
+            left: 37%;
+        }
+        .galeria-fotos{
+            width: 750px;
+        }
+    }
+    .suite-title{
+        font-size: map-get($font-size , s );
+    }
+    .card-container{
+        .cards{
+            height: 400px;
+            width: 280px;
+            .index-card-title{
+                font-size: map-get($font-size , xs );
+            }
+            .card-inside{
+                a{
+                    .card-inside-btn{
+                        font-size: map-get($font-size , xxs );
+                        padding: 7px 18px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .testimonials{
+        .carousel{
+            .carousel-item{
+                .carousel-img{
+                    top: 25%;
+                }
+                .carousel-caption{
+                    bottom: 0;
+                    p{
+                        font-size: map-get($font-size , sm);
+                    }
+                }
+            }
+        }
+    }
+    
+    #footer{
+        .main-footer{
+            .footer-left {
+                p{
+                    font-size: map-get($font-size , xxs );
+                    }
+            }
+            .footer-right{
+                .social{
+                    p{
+                        font-size: map-get($font-size , xxs);
+                    }
+                }
+            }
+        }
+    }
+}

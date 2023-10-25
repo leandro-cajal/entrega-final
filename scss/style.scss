@@ -1,0 +1,33 @@
+/*Fuentes*/
+@import "./base/typo";
+// variables
+@import "./utilities/variables";
+// mixin
+@import "./utilities/mixins";
+// map
+@import "./utilities/maps";
+/*Reset*/
+@import "./base/reset";
+@import"./components/whatsapp";
+
+
+@import "./layout/header";
+
+@import "./layout/main-index";
+@import "./layout/main-info";
+@import "./layout/main-habitaciones";
+@import "./layout/main-contacto";
+@import "./layout/main-reservar";
+
+
+@import "../scss/layout/footer";
+
+/*mediaqueries*/
+@import "./layout/media/media1300";
+@import "./layout/media/media1200";
+@import "./layout/media/media1024";
+@import "./layout/media/media900";
+@import "./layout/media/media768";
+@import "./layout/media/media540";
+@import "./layout/media/media425";
+@import "./layout/media/media375";

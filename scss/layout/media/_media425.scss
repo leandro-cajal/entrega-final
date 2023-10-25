@@ -1,0 +1,89 @@
+@media (max-width:425px){
+    %estilos-comunes-2 {
+        padding: 10px 18px; 
+        margin-bottom: 18px;
+        font-size: map-get($font-size , xxs );
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel-caption{
+                    p{
+                        font-size: map-get($font-size , xxxs);
+                    }
+                    h1{
+                        font-size: map-get($font-size , l );
+                    }
+                    h3{
+                        font-size: map-get($font-size , l );
+                    }
+                }
+            }
+        }
+    }
+    .contact-container{
+        .formulario-container{
+            .input-group{
+                input{
+                    &:not(.btn-form){
+                        @extend %estilos-comunes-2 ;
+                    }
+                }
+                textarea{
+                    @extend %estilos-comunes-2 ;
+                }
+            }
+        }
+        .formulario-reservar-container{
+            .input-group-reservar{
+                .date{
+                    label{
+                        input{
+                            &:not(.btn-form){
+                                @extend %estilos-comunes-2;
+                            }
+                        }
+                    }
+                }
+                select{
+                    @extend %estilos-comunes-2;
+                }
+            }
+        }
+    }
+    .testimonials{
+        .container{
+            .carousel{
+                .carousel-inner{
+                    .testimonial-item{
+                        min-height: 550px;
+                        position: relative;
+                        .carousel-img{
+                            top: 30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .card{
+            .col-md-6{
+                .card-body{
+                    .serv-items i{
+                        font-size: map-get($font-size , s );
+                    }
+                }
+            }
+        }
+    }
+    .footer-social{  
+        .social-icons{
+            div{
+                @include flex (column,nowrap,center,center,0);
+            }
+        }
+    }  
+}
+
+

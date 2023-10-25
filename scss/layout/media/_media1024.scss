@@ -1,0 +1,32 @@
+@media (max-width:1024px){
+    .description{
+        .description-container{
+            gap: 40px;
+            .description-title {
+                h1{
+                    font-size: map-get($font-size , l );
+                }
+                h2{
+                    font-size: map-get($font-size , s );
+                }
+            }
+            .description-text{
+                font-size:map-get($font-size , xxs ) ;
+                .leer-mas {
+                    a{
+                        font-size: map-get($font-size , xs );
+                    }
+                }
+            }
+            .description-img{
+                height: 400px;
+            }
+        }
+    }
+    
+    section.suites-title{
+        h4{
+            font-size:map-get($font-size , l );
+        }
+    }
+}

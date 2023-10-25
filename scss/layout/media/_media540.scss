@@ -1,0 +1,89 @@
+@media(max-width:540px){
+    .carousel-top{
+        .carousel-inner{
+            .carousel-item{
+                img {
+                    min-height: 600px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .description{
+        .description-container{
+            .description-container{
+                padding: 0px 30px;
+                .description-container-item{
+                    .description-img{
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .galeria-index{
+        padding: 0;
+        .galeria-index-link{
+            left: 35%;
+            font-size:map-get($font-size , md );
+            padding: 10px 20px;
+            width: auto;
+        }
+        .galeria-fotos{
+            width: 100%;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .card-container{
+        .cards{
+            .index-card-title{
+                left: 20%;
+            }
+            .card-inside{
+                left: 28%;
+            }
+        }
+    }
+    .container{
+        .carousel{
+            .carousel-inner{
+                .testimonial-item{
+                    .carousel-img{
+                        top: 25%;
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        .main-footer{
+            width: 100%;
+            .footer-left{
+                width: 80%;
+                p{
+                    display: none;
+                }
+            }
+        }
+        .bot-footer{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            .design-by {
+                span{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .contact-container{
+        width: 100%;
+    }
+    .wtsp a{
+        bottom: 15px;
+        right: 15px;
+    }
+}

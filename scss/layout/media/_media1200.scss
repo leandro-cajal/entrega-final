@@ -1,0 +1,11 @@
+/*container de la seccion description de mi index*/
+@media (max-width:1200px){
+    .description{
+        .description-container{
+            gap: 50px;
+            .description-img{
+                height: 450px;
+            }
+        }
+    }
+}

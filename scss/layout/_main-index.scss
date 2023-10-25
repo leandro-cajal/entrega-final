@@ -1,0 +1,296 @@
+/*Carrousel*/
+.carousel-top{
+    .carousel-inner{
+        .carousel-item{
+            img {
+                min-height: 800px;
+                object-fit: cover;
+            }
+            .carousel-caption{
+                h1{
+                    color: $color-t-2;
+                    font-size: map-get($font-size , mmml ); 
+                    font-family: 'Poppins', sans-serif;
+                }
+                p{
+                    color: $color-t-2;
+                    font-size: map-get($font-size , ul );
+                    font-family: 'Poppins', sans-serif;
+                }
+                h3{
+                    color: $color-t-2;
+                    font-size: map-get($font-size , ml );
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+    }
+}
+/*seccion description*/
+.description{
+    padding: 6.25rem 0px;
+    .description-container{
+        display: flex;
+        padding-bottom: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        .description-container-item{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+            .description-title{
+                h2{
+                font-size: 40px;   
+                text-align: center;
+                text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5); 
+                padding-bottom: 10px;}
+                h3{
+                    font-size: 25px;
+                    text-align: center;
+                    color: $bg-color-2;
+                    padding: 40px 0px;
+                }
+            }
+            .description-text{
+                display: flex;
+                text-align: left;
+                font-size: 20px;
+                flex-wrap: wrap;
+                p{
+                    padding: 0px 30px 50px 0px;
+                    text-align: center;
+                }
+                .leer-mas {
+                    a{
+                        color: $color-t-1;
+                        border-color: $color-t-1;
+                        font-size: map-get($font-size , s );
+                        transition: all 0.5s;
+                        &:hover{
+                            background-color: $color-t-1;
+                            color: $color-t-2;
+                        }
+                    }
+                }
+            }
+        }
+        .description-img{
+            width: 600px;
+            height: 600px;
+            background-color: $color-t-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            img{
+                width: 98%;
+                height: 98%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+/*Seccion galeria de index*/
+.galeria-index{
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../assets/imgs/wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+    }
+    .galeria-fotos{
+        padding: 100px 20px;
+        .galeria-text-index{
+           .d-flex{
+            h4{
+                color: $color-t-1;
+                padding-left: 50px;
+                font-size: map-get($font-size , uul );
+                font-family: 'Roboto', Courier, monospace;
+                font-weight: bold;
+            }
+            p{
+                color: $color-t-2;
+                font-size: map-get($font-size , s );
+                line-height:25px;
+
+            }
+            .btn{
+                align-self: center;
+                margin-top: 50px;
+                font-size:map-get($font-size , m );
+                color: $color-t-1;
+                border-color: $color-t-1;
+                font-weight: 600;
+                transition: all 0.5s;
+                &:hover{
+                    background-color: $color-t-1;
+                    color: $color-t-3;
+                }
+            }
+           }
+        }
+        .container-galeria{
+            min-height: 300px;
+            min-width: 300px;
+            img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+            }
+        }
+    }
+        /*img{
+            width: 100%;
+            height: 100%;  
+            object-fit: cover;
+        }*/
+/*seccion de habitaciones de index*/
+.suites-title {
+    h4{
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: $color-t-3;
+        text-align: center;
+        padding-top: 85px;
+    }
+}
+.card-container{
+    padding: 100px 20px;
+    display: flex;
+    @include flex(row,wrap,center,none,60px);
+    justify-content: center;
+    flex-wrap: wrap;
+    .cards{
+        background-color:$color-t-2;
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;
+        position: relative; 
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform:scale(1.05);
+            box-shadow: 0px 10px 20px 10px rgba(255, 255, 255, 0.4);
+        }
+        .index-card-title{
+            background-color: rgba(255, 255, 255, 0.3);
+            color:$bg-color-1;
+            font-size: 1.5rem;
+            position: absolute;
+            left: 26%;
+            top: 20%;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow:  0px 0px 5px rgba(0, 0, 0, 0.8);
+        }
+        .card-inside{
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            a{
+                .card-inside-btn{
+                    background-color:$bg-color-2;
+                    padding: 9px 20px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    color: $color-t-2;
+                    border: none;
+                    border-radius: 8 px;
+                    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                    transition: background-color 0.3s, color 0.3s;
+                    cursor: pointer;
+                    border: 1px solid transparent; 
+                    button{
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Testimonials*/
+.testimonials{
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+    font-family: 'oswald' sans-serif;
+    background-color: $bg-color-1;
+    overflow-x: hidden;
+    .row{
+        .testimonials-title{
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 50px;
+            text-transform: capitalize;
+            color:$color-t-1;
+        }
+        .testimonials-subtitle{
+            font-size: 25px;
+            margin-top: 15px;
+            text-transform: capitalize;
+            color:$color-t-2;
+            text-align: center;
+        }
+    }
+    .container{
+        .carousel{
+            .carousel-inner{
+                .testimonial-item{
+                    min-height: 500px;
+                    position: relative;
+                    .carousel-img{
+                        position: absolute;
+                        width: 150px;
+                        height: 150px;
+                        border-radius: 50%;
+                        left: 50%;
+                        top: 30%;
+                        transform: translate(-50%, -50%);
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            align-items: center;
+                        }
+                    }
+                    .carousel-caption{
+                        position: absolute;
+                        right: 15%;
+                        left: 15%;
+                        padding: 50px 0;
+                        color: $color-t-2;
+                        .testimonial-name{
+                            font-size: 25px;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                        }
+                        .testimonial-ubication{
+                            color: $color-t-4;
+                            font-size:map-get($font-size ,xxs );
+                        }
+                        .testimonial-icon{
+                            font-size: 40px;
+                            color:$color-t-1;
+                            margin-top: -5px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

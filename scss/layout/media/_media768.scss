@@ -1,0 +1,107 @@
+@media (max-width:768px){
+    %estilos-comunes-3 {
+        padding: 12px 20px; 
+        margin-bottom: 20px;
+        font-size: map-get($font-size , xxs );
+    }
+    .description{
+        .description-container{
+        padding: 0 30px;
+        .description-container-item{
+            .description-text{
+                .leer-mas{
+                    a{
+                        font-size:map-get($font-size , xs );
+                    }
+                }
+            }
+        }
+        }
+    }
+    .galeria-index{
+        .galeria-fotos{
+            width: 100%;
+        }
+        .galeria-index-link{
+            font-size: map-get($font-size , l );
+        }
+    }
+    .card-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .cards{
+            height: 350px;
+            width: 250px;
+        }
+    }
+    .testimonials{
+        .container{
+            .carousel{
+                .carousel-inner{
+                    .carousel-item{
+                        .carousel-img{
+                            top: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .container-fluid{
+        .info-img{
+            min-height: auto;
+        }
+    }
+    .contact-container{
+        .formulario-container{
+            .input-group{
+                input{
+                    &:not(.btn-form){
+                        @extend %estilos-comunes-3; 
+                    } 
+                }
+                textarea{
+                    @extend %estilos-comunes-3; 
+                }  
+                .btn-form{
+                    align-self: center;
+                    font-size: map-get($font-size , xs );
+                }
+            }
+        }
+        .formulario-reservar-container{
+            .input-group-reservar{
+                .date{
+                    label{
+                        input{
+                            @extend %estilos-comunes-3; 
+                        }
+                    }
+                }
+                select{
+                    @extend %estilos-comunes-3; 
+                }
+                .btn-form{
+                    align-self: center;
+                    font-size:map-get($font-size , xs );
+                }
+            }
+        }
+    }
+    #footer{
+        .container-fluid{
+            gap: 50px;
+            .footer-left{
+                align-items: center;
+            }
+        }
+        .bot-footer{
+            .design-by{
+                span{
+                    font-size: map-get($font-size , xxxs );
+                }
+            }
+        }
+    }
+}

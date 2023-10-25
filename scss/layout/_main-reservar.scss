@@ -1,0 +1,79 @@
+.contact-container{
+    background-color:$color-t-2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 50px 0;
+    max-width: 900px;
+    .formulario-reservar-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px; 
+        .form-title{
+            text-align: center;
+            margin-bottom: 25px;
+            color: #333;
+            font-family: 'Roboto', cursive;
+            text-transform: uppercase;
+        }
+        .input-group-reservar{
+            display: flex;
+            flex-direction: column;
+            .date{
+                display: flex;
+                justify-content:space-between;
+                flex-wrap: wrap;
+                label{
+                    input{
+                        background-color:$color-t-2;
+                        padding: 16px 22px; 
+                        margin-bottom: 25px;
+                        font-size: map-get($font-size , xs );
+                        display: flex;
+                        border: solid 2px $color-t-4;
+                    }
+                }
+            }
+            select{
+                background-color:$color-t-2;   
+                padding: 16px 22px; 
+                margin-bottom: 25px;
+                font-size: map-get($font-size , xs );
+                display: flex;
+                border: solid 2px $color-t-4;
+            }
+            .btn-form {
+                background-color:$color-t-2;
+                color:$color-t-1;
+                padding: 12px 16px;
+                cursor: pointer;
+                transition: all 0.3s;
+                font-size: map-get($font-size , s );
+                font-weight: 600;
+                border: solid 2px $color-t-1;
+                text-transform: uppercase;
+                width: fit-content;
+                align-self: center;
+                border-radius: 10px !important;
+                &:hover {
+                    background-color:$color-t-1;
+                    color:$color-t-2;
+                }
+            }
+        }
+    }
+}
+.mapa{
+    max-width: 1200px;
+    width: 100%;
+    iframe{
+        border-radius: 10px;
+        width: 100%;
+        height: 350px;
+        display: block;
+        box-shadow: 7px 9px 30px 0px rgba(0, 0, 0, 0.5);
+    }
+}

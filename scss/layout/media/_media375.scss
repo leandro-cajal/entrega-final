@@ -1,0 +1,57 @@
+@media (max-width:375px){
+    .carousel-top{
+        .carousel-inner{
+            .carousel-item{
+                img {
+                    min-height: 400px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .galeria-index{
+        .galeria-index-link{
+            font-size: map-get($font-size , s );
+            padding: 8px 18px;
+        }
+    }  
+    %estilos-comunes {
+        padding: 14px 10px;
+        margin-bottom: 25px;
+        font-size: map-get($font-size , xxs );
+        display: flex;
+        border: solid 1px #979797;
+    }
+    .contact-container{
+        .formulario-container{
+            .input-group {
+                input{
+                    &:not(.btn-form) {
+                        @extend %estilos-comunes;
+                        }
+                }
+                textarea{
+                @extend %estilos-comunes;
+                }
+            }
+        }
+    }
+    .contact-container{
+        .formulario-reservar-container{
+            .input-group-reservar{
+                .date{
+                    label{
+                        input{
+                            &:not(.btn-form){
+                                    @extend %estilos-comunes;
+                            }
+                        }
+                    }
+                }
+            }
+                select {
+                    @extend %estilos-comunes;
+                }
+        }
+    }
+}

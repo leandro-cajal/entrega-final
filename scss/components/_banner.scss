@@ -1,0 +1,28 @@
+.header-main{
+    height: 50vh;
+    min-height: 300px;
+    @include flex(column,nowrap,center,center,10px);
+    flex-direction: column;
+    text-align: center;
+    background-image: url('../assets/imgs/banner-02.jpg');
+    background-size: cover;
+    background-position: top;
+    gap: 10px;
+    color: $color-t-2;
+    .banner-title {
+        h2{
+            padding-top: 150px;
+            color: $color-t-2;
+            font-size: map-get($font-size , xxl );
+            font-family: 'Poppins', sans-serif;
+            text-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);
+        }
+    }
+    .banner-text {
+        span {
+            font-size: 25px;
+            font-family: 'Send Flowers', cursive;
+            text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+        }
+    }
+}
