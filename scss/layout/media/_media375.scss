@@ -54,4 +54,18 @@
                 }
         }
     }
+    .testimonials{
+        .container{
+            .carousel{
+                .carousel-inner{
+                    .carousel-caption{
+                        bottom: 0;
+                        p{
+                            font-size: map-get($font-size , xxxs);
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

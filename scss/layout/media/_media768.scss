@@ -44,6 +44,12 @@
                             top: 15%;
                         }
                     }
+                    .carousel-caption{
+                        bottom: 0;
+                        p{
+                            font-size: map-get($font-size , xxs);
+                        }
+                    }
                 }
             }
         }

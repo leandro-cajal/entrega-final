@@ -7,6 +7,8 @@
                 object-fit: cover;
             }
             .carousel-caption{
+                animation: fadeInUp;
+                animation-duration: 1s;
                 h1{
                     color: $color-t-2;
                     font-size: map-get($font-size , mmml ); 
@@ -102,38 +104,36 @@
     background-size: cover;
     background-attachment: fixed;
     padding: 100px 0;
+    @include flex(row,nowrap,center,center,0px);
     }
     .galeria-fotos{
         padding: 100px 20px;
         .galeria-text-index{
-           .d-flex{
-            h4{
-                color: $color-t-1;
-                padding-left: 50px;
-                font-size: map-get($font-size , uul );
-                font-family: 'Roboto', Courier, monospace;
-                font-weight: bold;
-            }
-            p{
-                color: $color-t-2;
-                font-size: map-get($font-size , s );
-                line-height:25px;
-
-            }
-            .btn{
-                align-self: center;
-                margin-top: 50px;
-                font-size:map-get($font-size , m );
-                color: $color-t-1;
-                border-color: $color-t-1;
-                font-weight: 600;
-                transition: all 0.5s;
-                &:hover{
-                    background-color: $color-t-1;
-                    color: $color-t-3;
+            .d-flex{
+                h4{
+                    color: $color-t-1;
+                    font-size: map-get($font-size , uul );
+                    font-family: 'Roboto', Courier, monospace;
+                    font-weight: bold;
+                }
+                p{
+                    color: $color-t-2;
+                    font-size: map-get($font-size , md );
+                    line-height:25px;
+                }
+                .btn{
+                    align-self: center;
+                    font-size:map-get($font-size , m );
+                    color: $color-t-1;
+                    border-color: $color-t-1;
+                    font-weight: 600;
+                    transition: all 0.5s;
+                    &:hover{
+                        background-color: $color-t-1;
+                        color: $color-t-3;
+                    }
                 }
             }
-           }
         }
         .container-galeria{
             min-height: 300px;
@@ -145,12 +145,7 @@
             }
         }
     }
-        /*img{
-            width: 100%;
-            height: 100%;  
-            object-fit: cover;
-        }*/
-/*seccion de habitaciones de index*/
+
 .suites-title {
     h4{
         font-size: 40px;
@@ -163,10 +158,7 @@
 }
 .card-container{
     padding: 100px 20px;
-    display: flex;
     @include flex(row,wrap,center,none,60px);
-    justify-content: center;
-    flex-wrap: wrap;
     .cards{
         background-color:$color-t-2;
         width: 400px;
@@ -179,7 +171,7 @@
             box-shadow: 0px 10px 20px 10px rgba(255, 255, 255, 0.4);
         }
         .index-card-title{
-            background-color: rgba(255, 255, 255, 0.3);
+            background-color: rgba(255, 255, 255, 0.2);
             color:$bg-color-1;
             font-size: 1.5rem;
             position: absolute;
@@ -226,8 +218,12 @@
     position: relative;
     padding-bottom: 50px;
     font-family: 'oswald' sans-serif;
-    background-color: $bg-color-1;
     overflow-x: hidden;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0.7)),url(../assets/imgs/girl-book.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
     .row{
         .testimonials-title{
             font-size: 40px;
